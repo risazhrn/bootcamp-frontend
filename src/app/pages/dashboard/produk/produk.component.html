@@ -1,0 +1,36 @@
+
+<div class="container">
+    <div class="bg-primary text-white p-4 my-4 d-flex justify-content-between rounded">
+        <h3>Data Produk</h3>
+        <button type="button" class="btn btn-light">Tambah Produk</button>
+    </div>
+    <table class="table table-bordered">
+      <caption>List of products</caption>
+      <thead>
+          <tr class="text-center">
+            <th scope="col">#</th>
+            <th scope="col">Nama Produk</th>
+            <th scope="col">Kategori</th>
+            <th scope="col">Stok</th>
+            <th scope="col">Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" class="text-center">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td class="text-center">10</td>
+            <td>
+              <div class="d-flex justify-content-center gap-1">
+                <button type="button" class="btn btn-dark"><fa-icon [icon]="faInfoCircle"></fa-icon></button>
+                <button type="button" class="btn btn-warning"><fa-icon [icon]="faPencilAlt"></fa-icon></button>
+                <button type="button" class="btn btn-danger"><fa-icon [icon]="faTrashAlt"></fa-icon></button>
+              </div>
+            </td>
+          </tr>
+          
+        
+        </tbody>
+      </table>
+</div>
