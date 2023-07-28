@@ -3,11 +3,16 @@ import { RouterModule, Routes } from '@angular/router';
 import { UserComponent } from './user/user.component';
 import { ProdukComponent } from './produk/produk.component';
 import { KategoriComponent } from './kategori/kategori.component';
+import { UserDetailComponent } from './user/user-detail/user-detail.component';
 
 const routes: Routes = [
   {
     path : "user",
-    component : UserComponent
+    component : UserComponent,
+  },
+  {
+    path: "detail-user",
+    component : UserDetailComponent
   },
   {
     path : "produk",
@@ -17,6 +22,10 @@ const routes: Routes = [
     path : "kategori",
     component : KategoriComponent
   },
+  {
+    path: "user-detail",
+    component: UserDetailComponent
+  }
 ];
 
 @NgModule({

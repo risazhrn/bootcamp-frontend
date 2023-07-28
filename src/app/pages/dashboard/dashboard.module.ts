@@ -8,6 +8,7 @@ import { KategoriComponent } from './kategori/kategori.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClientModule } from '@angular/common/http'
 import { UserService } from './user/user.service';
+import { UserDetailComponent } from './user/user-detail/user-detail.component';
 
 
 @NgModule({
@@ -15,13 +16,14 @@ import { UserService } from './user/user.service';
     DashboardComponent,
     UserComponent,
     ProdukComponent,
-    KategoriComponent
+    KategoriComponent,
+    UserDetailComponent,
   ],
   imports: [
     CommonModule,
     DashboardRoutingModule,
     FontAwesomeModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [
     UserService
